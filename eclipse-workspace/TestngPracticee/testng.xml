@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="1">
+<listeners>
+<listener class-name="com.common.Base"/>
+</listeners>
+  <test name="chrometest">
+  <parameter name="browser" value="chrome"/>
+    <classes>
+     <!--  <class name="com.common.Tsett"/> -->
+     <class name="com.common.Testt"/>
+    </classes>
+  </test> 
+  <test name="geckotest">
+  <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.common.Testt"/>
+    </classes>
+  </test> 
+</suite> 
+
